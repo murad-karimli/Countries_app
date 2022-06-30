@@ -1,0 +1,142 @@
+*,*::after,*::before
+{
+    box-sizing: border-box;
+    
+}
+html{
+    --bg-: hsl(0, 0%, 90%);
+    --bg-panel: #d3d5da;
+    --color-heading: rgb(27, 168, 14); 
+    --color-text: #333333;
+}
+html[data-theme='dark'] {
+    --bg: #333333;
+    --bg-panel: #434343;
+    --color-heading: #0077ff; 
+    --color-text: #B5B5B5;
+}
+
+body{
+    margin: 0;
+    background-color: var(--bg);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: var(--bg-panel);
+}
+.search{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.search-div
+{
+    display: flex;
+}
+
+#search-input
+{
+    background-color:var(--bg-panel);
+    height: 70px;
+    width: 200%;
+   outline: none;
+   border: none;
+   border-radius: 10px;
+   padding: 35px;
+}
+#search-input::placeholder
+{
+    color: #fefffc;
+    font-weight: 700;
+}
+.filter
+{
+    width: 20%;
+    height: 80%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#select
+{
+    border: none;
+    height: 70px;
+    outline: none;
+    background-color: var(--bg-panel);
+    border-radius: 10px;
+    padding: 20px;
+    color: #fefffc;
+    font-weight: 700;
+}
+.countries-con
+{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.country
+{
+    height: 500px;
+    width: 89%;
+    margin: 20px;
+    border-radius: 10px;
+    border: #cfcfd0 1.5px solid;
+}
+.country-img
+{
+ 
+    border-radius: 10px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.about-country
+{
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    display: contents;
+}
+#dark-mode
+{
+    width: 20px;
+    height: 20px;
+    display: inline;
+    position: relative;
+    top: 8px;
+    margin: 6px;
+}
+.p-element
+{
+    display: inline;
+}
+.dark
+{
+    display: flex;
+}
+#search-icon
+{
+    display: inline;
+    margin: 10px 5px;
+    width: 40px;
+    height: 40px;
+}
+p{
+    color: var(--color-text);
+}
+h3{
+    color: var(--color-text);
+}
+h1{
+    color: var(--color-text);
+}
